@@ -1,0 +1,86 @@
+a    {font-size: 8pt; text-decoration: none; color: #1f1016;}
+a:hover
+     {color: #855b65;}
+
+/* atd = a table description */
+.atd    {font-size: 10pt; text-decoration: none; color: #1f1016;}
+.atd:hover
+     {color: #855b65;}
+
+/* atdp = a table description PowJPGs*/
+.atdp    {font-size: 12pt; text-decoration: none; color: #2081e2;}
+.atdp:hover
+     {color: #000000;}
+          
+/* am = a menu */
+.am  {font-size: 16pt; text-decoration: none; color: #845b65; font-weight: bold; font-family: monospace}
+.am:hover
+     {color: #d32d58;}
+
+/* ams = a marketplaces, socials */
+.ams {font-size: 12pt; text-decoration: none; color: #2081e2; display: flex; align-items: center; justify-content: left}
+.ams:hover
+     {color: #24afff;}
+     
+/* ae = a explorer */
+.ae  {font-size:  8pt; text-decoration: none; font-weight: bold; color: #1f1016;}
+
+/* ama = a minting address */
+.ama {font-size: 10pt; text-decoration: none; font-weight: bold; color: #2081e2; font-family: monospace}
+.ama:hover
+     {color: #24afff;}
+
+/* ama = a minting address PowJPGs*/
+.amap {font-size: 10pt; text-decoration: none; font-weight: bold; color: #000000; font-family: monospace}
+.amap:hover
+     {color: #2081e2;}
+     
+/* ai = a img */
+.ai  {font-size: 12pt; text-decoration: none;}
+
+/* aid, ais, aih, aib, aia = a img description, sold, hold, buy, age */
+.aid {font-size:  8pt; text-decoration: none;}
+.ais {font-size:  8pt; text-decoration: none; font-weight: bold; color: #609e42;}
+.aih {font-size:  8pt; text-decoration: none; font-weight: bold; color: #206a71;}
+.aib {font-size:  8pt; text-decoration: none; font-weight: bold; color: #b0062e;}
+.aia {font-size:  8pt; text-decoration: none; font-weight: bold; color: #b0062e;}
+
+/* imge = img explorer */
+.imge {width: 180px; height: 180px; object-fit: cover;}
+/* imgc = img choosen */
+.imgc {width: 225px; height: 225px; object-fit: cover;}
+
+/* imgps = img PoWJPGs socials */
+.imgps {width: 25px; filter: grayscale(1.0);}
+.imgps:hover
+     {filter: grayscale(0.0);}
+     
+/* imgcd = img copy data */
+.imgcd {width: 14px; filter: grayscale(1.0);}
+.imgcd:hover
+     {filter: grayscale(0.0);}
+
+
+/* ts = table series */
+.ts {border: 1px solid #d0d0d0; border-collapse: collapse; margin-left: auto; margin-right: auto;}
+.ts tr {text-align: center; vertical-align: top}
+.ts td {border: 1px solid #d0d0d0;}
+
+/* tcaption = table caption */
+.tcaption  {font-size: 24pt; text-decoration: none; font-weight: bold;}
+/* tcfs = table caption font small */
+.tcfs  {font-size: 8pt; color: #112233;}
+
+/* tts = table tokenart series */
+/* <tr align="center" valign="bottom" style="font-smooth: never; -webkit-font-smoothing: none;"> */
+.tts {border: none; border-collapse: collapse; margin-left: auto; margin-right: auto;}
+.tts tr {border-bottom: 1px solid #d0d0d0; text-align: center; vertical-align: top;}
+.tts tr:last-child {border: none;}
+.tts td {border-right: 1px solid #d0d0d0;}
+.tts td:last-child {border: none;}
+ 
+/* div = div logo marketplaces */
+.divl {display: flex; align-items: center; justify-content: center}
+/* tdp = td padding */
+.tdp {padding: 10px;}
+
