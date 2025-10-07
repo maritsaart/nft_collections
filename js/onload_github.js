@@ -87,45 +87,43 @@ function onload(domain='github') {
                 default:
                     t = t + ta;
             }
-        }
             
-        var Type = nd[ti][iType];
-        switch (Type) {
-            case "N":
-                var URL  = nd[ti][iCIDv1];
-                if (URL == '') {
-                    URL = nd[ti][iURL];
-                    if (crypto == 'ETH') {
-                        URL = 'https://dl.openseauserdata.com/cache/originImage/files/' + URL;
+            var Type = nd[ti][iType];
+            switch (Type) {
+                case "N":
+                    var URL  = nd[ti][iCIDv1];
+                    if (URL == '') {
+                        URL = nd[ti][iURL];
+                        if (crypto == 'ETH') {
+                            URL = 'https://dl.openseauserdata.com/cache/originImage/files/' + URL;
+                        }
                     }
-                }
-                if (URL == 'ON_CHAIN_DATA') {
+                    if (URL == 'ON_CHAIN_DATA') {
+                        if (crypto == 'ERG') {
+                            URL = 'https://explorer.ergoplatform.com/en/transactions/' + nd[ti][iTx];
+                            cell.innerHTML = '<a href="' + URL + '" title="View source on-chain (R9 register)" class="ai">\n' + cell.innerHTML + '</a>' + t;
+                        } else {
+                            cell.innerHTML = cell.innerHTML + t;
+                        }
+                    } else {
+                        cell.innerHTML = '<a href="' + URL + '" title="Open original" class="ai">\n' + cell.innerHTML + '</a>' + t;
+                    }
+                    break;
+                    
+                case "T":
                     if (crypto == 'ERG') {
-                        URL = 'https://explorer.ergoplatform.com/en/transactions/' + nd[ti][iTx];
-                        cell.innerHTML = '<a href="' + URL + '" title="View source on-chain (R9 register)" class="ai">\n' + cell.innerHTML + '</a>' + t;
+                        URL = 'https://explorer.ergoplatform.com/en/issued-tokens?searchQuery=' + id;
+                        cell.innerHTML = '<a href="' + URL + '" title="View original on-chain" class="ai">\n' + cell.innerHTML + '</a>' + t;
                     } else {
                         cell.innerHTML = cell.innerHTML + t;
                     }
-                } else {
-                    cell.innerHTML = '<a href="' + URL + '" title="Open original" class="ai">\n' + cell.innerHTML + '</a>' + t;
-                }
-                break;
-                
-            case "T":
-                if (crypto == 'ERG') {
-                    URL = 'https://explorer.ergoplatform.com/en/issued-tokens?searchQuery=' + id;
-                    cell.innerHTML = '<a href="' + URL + '" title="View original on-chain" class="ai">\n' + cell.innerHTML + '</a>' + t;
-                } else {
-                    cell.innerHTML = cell.innerHTML + t;
-                }
-                break;
-                
-            default:
-                t = t + ta;
+                    break;
+                    
+                default:
+                    t = t + ta;
             }
         }
     }
 
     return false;
 }
-
