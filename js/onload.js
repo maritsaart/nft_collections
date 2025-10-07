@@ -28,7 +28,7 @@ function get_jpgstoreId(tokenIndex) {
 };
 
 
-function onload(domain='ipfs') {
+function onload(domain='github') {
     const timestampCurr = new Date().getTime()
 
     for(let cell of document.getElementsByTagName('td')) {
