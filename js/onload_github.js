@@ -72,8 +72,9 @@ function onload(domain='github') {
                 case "ERG":
                     t = t +
                         '<a href="https://ergexplorer.com/token#'       + id + '" title="ergexplorer.com" >ergexplorer'      + '\n&nbsp;&nbsp;' +
-                        '<a href="https://ergotokens.org/#/?token=' + id + '" title="ergotokens.org">ergotokens</a>' + '\n&nbsp;&nbsp;' +
-                        '<a href="https://explorer.ergoplatform.com/en/transactions/' + nd[ti][iTx] + '">' +
+                        '<a href="https://ergotokens.org/#/?token=' + id + '" title="ergotokens.org">et</a>' + '\n&nbsp;&nbsp;' +
+                        '<a href="https://explorer.ergoplatform.com/en/transactions/' + nd[ti][iTx] + '" title="Mint transaction">' +
+                        
                         ta +
                         '</a>'
                     break;
